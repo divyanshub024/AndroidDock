@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android Dock</string>
+    <string name="add_apps_to_dock">Add apps to dock</string>
 </resources>

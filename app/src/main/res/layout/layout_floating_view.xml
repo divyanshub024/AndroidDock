@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/floatingHead"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:translationX="0dp"
+        app:layout_constraintEnd_toStartOf="@id/dockRecyclerView"
+        >
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:background="@drawable/semicircle"
+        android:tint="#fff"
+        android:layout_alignParentEnd="true"
+        />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dockRecyclerView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blackOpacity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:translationX="0dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
